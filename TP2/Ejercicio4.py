@@ -1,19 +1,13 @@
-def sin_repetidos(lista):
+def sin_repetidos(lista,lista_2):
     resultado = []
     for i in lista:
-        if i not in resultado:
+        if i not in lista_2:
             resultado.append(i)
     return resultado
 
-palabras = ['hola','chau','luna','sol','chau']
-repetidas = ['chau','luna','tonto','luna','chau']
-resultado = []
+lista = ['hola','chau','god', 'hola']
+lista_2 = ['gaston','hola','sol','hola','god']
 
-for i in palabras:
-    for j in repetidas:
-        if i == j:
-            resultado.append(i)
-            break
-print(palabras)
-print(repetidas)
-print(sin_repetidos(resultado))
+print(lista)
+print(lista_2)
+print(sin_repetidos(lista,lista_2))
